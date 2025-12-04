@@ -76,10 +76,10 @@
                 <?php foreach ($produtos as $produto): ?>
                     <tr>
                         <td><?php echo $produto['id']; ?></td>
-                        <td>**<?php echo htmlspecialchars($produto['nome']); ?>**</td>
+                        <td><?php echo htmlspecialchars($produto['nome']); ?></td>
                         <td><?php echo htmlspecialchars($produto['categoria_nome']); ?></td>
                         <td>R$ <?php echo number_format($produto['preco_custo'], 2, ',', '.'); ?></td>
-                        <td>**<?php echo $produto['estoque_atual']; ?>**</td>
+                        <td><?php echo $produto['estoque_atual']; ?></td>
                         
                         <td>
                             <form action="index.php" method="POST" class="action-form">
